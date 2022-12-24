@@ -1,2 +1,0 @@
-# rangrangzigithub.io
-coloful
