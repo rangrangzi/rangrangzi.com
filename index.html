@@ -2,12 +2,11 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>我的博客登录界面</title>
+		<title>登录页</title>
 		<!-- 引入样式 -->
-		<link rel="stylesheet" href="css/style.css">	
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<embed src='music/Tai Verdes - sheluvme.mp3' loop=false aotostart=true mastersound hidden=true width=0 height=0></embed>
 		<!-- 主体 -->
 		<div class="login">
 			<!-- 中间的盒子 -->
@@ -18,17 +17,17 @@
 				</div>
 				<!-- 右侧表单 -->
 				<div class="login-box-right">
-					<h3>欢迎登录博客</h3>
+					<h3>欢迎登录</h3>
 					<form>
 						<!-- 账号输入框 -->
 						<div class="list">
 							<span>账号：</span>
-							<input id="user" type="text" placeholder="请输入您的账号">
+							<input id="user" type="text" placeholder="请输入账号">
 						</div>
 						<!-- 密码输入框 -->
 						<div class="list">
 							<span>密码：</span>
-							<input id="password" type="password" placeholder="请输入您的密码">
+							<input id="password" type="password" placeholder="请输入密码">
 						</div>
 						<!-- 登录按钮 -->
 						<div class="btn">
@@ -62,14 +61,14 @@
 				// 固定账号密码验证可删除 --- 开始
 				
 				// 判断账号是否输入正确 admin 可以换成你想要输入的账号作为验证
-				if(user != 'rangrangzi') {
-					alert("账号有误")
+				if(user != 'admin') {
+					alert("账号不能为空")
 					// 不正确就打断
 					return false
 				}
 				// 判断密码是否输入正确 123456 可以换成你想要输入的密码作为验证
-				if(password != '020422') {
-					alert("密码错误")
+				if(password != '123456') {
+					alert("密码不能为空")
 					// 不正确就打断
 					return false
 				}
@@ -79,6 +78,7 @@
 				
 				// 满足所有条件后执行
 				alert('登录成功')
+				location.href = 'cherry.html'
 			}
 		</script>
 	</body>

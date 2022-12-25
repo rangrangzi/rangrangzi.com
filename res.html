@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>个人网页</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<!-- 内容 -->
+		<div class="box">
+			<!-- 顶部导航 -->
+			<div class="header">
+				<!-- logo -->
+				<div class="logo">
+					<h3>个人网页</h3>
+				</div>
+				<!-- 菜单 -->
+				<div class="nav">
+					<ul>
+						<li>
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<a href="about.html">关于我</a>
+						</li>
+						<li>
+							<a href="work.html">我的作品</a>
+						</li>
+						<li>
+							<a href="contant.html">联系我</a>
+						</li>
+						<li class="active">
+							<a href="login.html">注册/登录</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 左侧菜单 -->
+			<div class="box-left">
+				<img src="img/user.png" alt="">
+				<h3>你的姓名</h3>
+				<p>班级: 计算机科学与技术</p>
+				<p>学号：XH0000001</p>
+				<p>学校：某某学校</p>
+				<p>联系方式：188-8888-8888</p>
+				<p>邮箱：88888888@qq.com</p>
+			</div>
+			<!-- 右侧内容区 -->
+			<div class="box-right">
+				<div class="br-box">
+					<div class="login">
+						<div class="login-f">
+							<h3>欢迎注册</h3>
+							<!-- 输入框 -->
+							<div class="login-box">
+								<input type="text" id="user" placeholder="请输入账号" />
+								<input type="password" id="password" placeholder="请输入密码" />
+							</div>
+							<button type="button" onclick="res()">注册</button>
+							<p>已有账号，<a href="login.html">点击登陆</a></p>
+						</div>
+					</div>
+					<div class="footer">
+						<p>@CopyRight 某某设计制作</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			function res(){
+				var user = document.getElementById('user').value
+				var password = document.getElementById('password').value
+				
+				if(!user){
+					alert("账号不能为空")
+					return false
+				}
+				if(!password){
+					alert("密码不能为空")
+					return false
+				}
+				alert("注册成功，去登陆")
+				location.href = 'login.html'
+			}
+			</script>
+	</body>
+</html>
