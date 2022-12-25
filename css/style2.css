@@ -1,0 +1,157 @@
+/* 去除所有标签的的内外边距 */
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	/* 设置长度 */
+	width: 100%;
+	/* 设置高度 100vh为浏览器的视图高度 */
+	height: 100vh;
+	/* 设置背景颜色 */
+	background: url(../img/left.jpg) no-repeat;
+	/* 背景图片自动裁剪 防止图片压缩 */
+	background-size: cover;
+}
+/* 主体 */
+.login{
+	/* 设置长度 */
+	width: 100%;
+	/* 设置高度 100vh为浏览器的视图高度 */
+	height: 100vh;
+	/* 超出隐藏 */
+	overflow: hidden;
+	/* 设置背景增加美感 */
+	background: rgba(0, 0, 0, 0.6);
+	/* 设置flex布局 主要作用于他的子级 .login-box */
+	display: flex;
+	/* 横向居中显示 */
+	justify-content: center;
+	/* 纵向居中显示 */
+	align-items: center;
+}
+/* 中间的盒子 */
+.login-box{
+	/* 设置flex布局 主要作用于他的两个子级 */
+	display: flex;
+	/* 横向两端对齐 */
+	justify-content: space-between;
+	/* 设置长度 */
+	width: 80%;
+	/* 设置高度 */
+	height: 70%;
+	/* 设置阴影更立体 */
+	box-shadow: 2px 3px 10px #999;
+	/* 设置圆弧更好看 */
+	border-radius: 20px;
+	/* 设置背景颜色 */
+	background: #FFFFFF;
+	/* 超出隐藏 */
+	overflow: hidden;
+}
+/* 左侧图片 */
+.login-box-left{
+	/* 设置长度 */
+	width: 50%;
+	/* 设置高度 */
+	height: 100%;
+}
+.login-box-left img{
+	/* 设置成块级元素 防止图片周围有空白 */
+	display: block;
+	/* 设置长度 */
+	width: 100%;
+	/* 设置高度 */
+	height: 100%;
+	/* 图片自动裁剪 防止变形 */
+	object-fit: cover;
+}
+/* 右侧表单 */
+.login-box-right{
+	/* 设置长度 */
+	width: 40%;
+	/* 设置右侧外边距 */
+	margin-right: 5%;
+	/* 设置flex布局  */
+	display: flex;
+	/* 横向居中显示 */
+	justify-content: center;
+	/* 可换行 */
+	flex-wrap: wrap;
+	/* 纵向居中显示 */
+	align-content: center;
+}
+/* 标题 */
+.login-box-right h3{
+	/* 设置字体大小 */
+	font-size: 40px;
+	/* 设置长度 */
+	width: 100%;
+	/* 居中显示 */
+	text-align: center;
+}
+/* form */
+.login-box-right form{
+	/* 设置长度 */
+	width: 100%;
+	/* 设置上下外边距为10px 左右为0 */
+	margin: 30px 0;
+}
+.login-box-right .list{
+	/* 设置flex布局  */
+	display: flex;
+	/* 横向居中显示 */
+	justify-content: center;
+	/* 纵向居中显示 */
+	align-items: center;
+	/* 设置长度 */
+	width: 100%;
+	/* 设置上下外边距为20px 左右为0 */
+	margin: 20px 0;
+}
+.login-box-right .list span{
+	/* 设置成块级元素 */
+	display: block;
+	/* 设置长度 */
+	width: 60px;
+	/* 设置字体大小 */
+	font-size: 20px;
+	/* 设置右侧外边距 */
+	margin-right: 10px;
+}
+.login-box-right .list input{
+	/* 设置长度 */
+	width: 60%;
+	/* 设置高度 */
+	height: 45px;
+	/* 设置圆弧更好看 */
+	border-radius: 10px;
+	/* 左侧内边距 */
+	padding-left: 10px;
+}
+.login-box-right .btn {
+	/* 上侧外边距80px */
+	margin-top: 80px;
+	/* 左侧外边距10% */
+	margin-left: 10%;
+}
+.login-box-right .btn button{
+	/* 设置成块级元素 */
+	display: block;
+	/* 设置长度 */
+	width: 260px;
+	/* 设置高度 */
+	height: 50px;
+	/*  左右居中显示 */
+	margin: 0 auto;
+	/* 设置圆弧更好看 */
+	border-radius: 10px;
+	/* 设置字体大小 */
+	font-size: 20px;
+	/* 字体颜色 */
+	color: #FFFFFF;
+	/* 去除默认边框 */
+	border: none;
+	/* 设置背景颜色 */
+	background: #5657ff;
+}

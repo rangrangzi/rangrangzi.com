@@ -9,6 +9,7 @@ body {
 	height: 100vh;
 	font-size: 15px "Microsoft YaHei", Arial, Helvetica, sans-serif;
 	background: #f6fbfe;
+	background: url(../img/left.jpg) no-repeat;
 }
 
 @font-face {
@@ -43,6 +44,7 @@ a {
 	line-height: 80px;
 	background: #FFFFFF;
 	box-shadow: 2px 3px 5px #CCCCCC;
+	
 }
 
 .logo {
@@ -89,6 +91,7 @@ a {
 	text-align: center;
 	background: #FFFFFF;
 	box-shadow: 3px 5px 10px #CCCCCC;
+	background: url(../img/left.jpg) no-repeat;
 }
 
 .box-left img {
@@ -97,6 +100,7 @@ a {
 	height: 150px;
 	border-radius: 50%;
 	margin: 150px auto 80px auto;
+	
 }
 
 .box-left h3 {
