@@ -2,84 +2,88 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>登录页</title>
-		<!-- 引入样式 -->
+		<title>个人网页</title>
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<!-- 主体 -->
-		<div class="login">
-			<!-- 中间的盒子 -->
-			<div class="login-box">
-				<!-- 左侧图片 -->
-				<div class="login-box-left">
-					<img src="img/left.jpg" alt="">
+		<!-- 内容 -->
+		<div class="box">
+			<!-- 顶部导航 -->
+			<div class="header">
+				<!-- logo -->
+				<div class="logo">
+					<h3>个人网页</h3>
 				</div>
-				<!-- 右侧表单 -->
-				<div class="login-box-right">
-					<h3>欢迎登录</h3>
-					<form>
-						<!-- 账号输入框 -->
-						<div class="list">
-							<span>账号：</span>
-							<input id="user" type="text" placeholder="请输入账号">
-						</div>
-						<!-- 密码输入框 -->
-						<div class="list">
-							<span>密码：</span>
-							<input id="password" type="password" placeholder="请输入密码">
-						</div>
-						<!-- 登录按钮 -->
-						<div class="btn">
-							<button onclick="loginCheck()">登录</button>
-						</div>
-					</form>
+				<!-- 菜单 -->
+				<div class="nav">
+					<ul>
+						<li class="active">
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<a href="about.html">关于我</a>
+						</li>
+						<li>
+							<a href="work.html">我的作品</a>
+						</li>
+						<li>
+							<a href="contant.html">联系我</a>
+						</li>
+						<li>
+							<a href="login.html">注册/登录</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 左侧菜单 -->
+			<div class="box-left">
+				<img src="img/user.png" alt="">
+				<h3>你的姓名</h3>
+				<p>班级: 计算机科学与技术</p>
+				<p>学号：XH0000001</p>
+				<p>学校：某某学校</p>
+				<p>联系方式：188-8888-8888</p>
+				<p>邮箱：88888888@qq.com</p>
+			</div>
+			<!-- 右侧内容区 -->
+			<div class="box-right">
+				<div class="br-box">
+					<!-- 大图 -->
+					<div class="banner">
+						<img src="img/banner.png" alt="">
+					</div>
+					<div class="title">
+						<h3>个人简介</h3>
+					</div>
+					<!-- 个人一个简介 -->
+					<div class="about-me">
+						<p>我和在座的同学们一样，渴望展翅高飞，渴望将来有更大的发展空间，有施展才华的更广阔的天地。我想，有耕耘就会有收获。未来的四年里，由各位老师的倾情传授，我们必须会有一个无限完美的未来。......
+						</p>
+					</div>
+					<div class="title">
+						<h3>我的作品</h3>
+					</div>
+					<div class="work">
+						<ul>
+							<li>
+								<img src="img/banner.png" alt="">
+								<p>这是一个作品的介绍</p>
+							</li>
+							<li>
+								<img src="img/user.png" alt="">
+								<p>这是一个作品的介绍</p>
+							</li>
+							<li>
+								<img src="img/banner.png" alt="">
+								<p>这是一个作品的介绍</p>
+							</li>
+						</ul>
+					</div>
+					<div class="footer">
+						<p>@CopyRight 某某设计制作</p>
+					</div>
 				</div>
 			</div>
 		</div>
-		<script>
-			// 登录验证 可删除
-			function loginCheck () {
-				// 获取id为user的value值
-				var user = document.getElementById('user').value
-				// 获取id为password的value值
-				var password = document.getElementById('password').value
-				
-				// 判断账号是否输入
-				if(!user) {
-					alert("账号不能为空")
-					// 没输入就打断
-					return false
-				}
-				// 判断密码是否输入
-				if(!password) {
-					alert("密码不能为空")
-					// 没输入就打断
-					return false
-				}
-				
-				// 固定账号密码验证可删除 --- 开始
-				
-				// 判断账号是否输入正确 admin 可以换成你想要输入的账号作为验证
-				if(user != 'admin') {
-					alert("账号不能为空")
-					// 不正确就打断
-					return false
-				}
-				// 判断密码是否输入正确 123456 可以换成你想要输入的密码作为验证
-				if(password != '123456') {
-					alert("密码不能为空")
-					// 不正确就打断
-					return false
-				}
-				
-				// 固定账号密码验证可删除 --- 结束
-				
-				
-				// 满足所有条件后执行
-				alert('登录成功')
-				location.href = 'cherry.html'
-			}
-		</script>
 	</body>
 </html>
