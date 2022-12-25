@@ -1,18 +1,84 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>我的博客</title>
-</head>
-<body>
-    
-    <div id="one" style="background-color:palevioletred;height:80px;width:1500px;text-align: center ;float: left;"><h1>欢迎来到我的网站</h1></div>
-    <div id="one" style="background-color:palegreen;height:40px;width:120px;float:left;"><a href="https://rangrangzi.github.io/rangrangziya.com/" target="_blank" rel="noopener noreferrer">访问第一个页面</a></div>
-
-    <div id="one" style="background-color:powderblue;height:40px;width:120px;float:left;"><a href="http://127.0.0.1:5500/templates/apage02.html" target="_blank" rel="noopener noreferrer">访问第二个页面</a></div>
-    <div id="two" style="background-color:plum;height:40px;width:1200px;float:left;"><a href="http://127.0.0.1:5500/templates/apage03.html" target="_blank" rel="noopener noreferrer">访问第三个页面</a></div>
-    <!-- <img src="https://tse2-mm.cn.bing.net/th/id/OIP-C.EwCPY6fPdfXvlCjy0iWwHgHaEK?w=333&h=187&c=7&r=0&o=5&dpr=1.12&pid=1.7" alt="Pulpit rock" width="700" height="400">
-    <img src="https://tse1-mm.cn.bing.net/th/id/OIP-C.Z5VM_0YP1hhAgkoeENgrtgHaEU?w=322&h=187&c=7&r=0&o=5&dpr=1.12&pid=1.7" alt="Pulpit rock" width="700" height="400">
-    <img src="https://tse3-mm.cn.bing.net/th/id/OIP-C.2tfsnCrq_XsqMh0Lk-_-agHaEK?w=333&h=187&c=7&r=0&o=5&dpr=1.12&pid=1.7" alt="Pulpit rock" width="1400" height="200"> -->
-</body>
+	<head>
+		<meta charset="utf-8" />
+		<title>登录页</title>
+		<!-- 引入样式 -->
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<!-- 主体 -->
+		<div class="login">
+			<!-- 中间的盒子 -->
+			<div class="login-box">
+				<!-- 左侧图片 -->
+				<div class="login-box-left">
+					<img src="img/left.jpg" alt="">
+				</div>
+				<!-- 右侧表单 -->
+				<div class="login-box-right">
+					<h3>欢迎登录</h3>
+					<form>
+						<!-- 账号输入框 -->
+						<div class="list">
+							<span>账号：</span>
+							<input id="user" type="text" placeholder="请输入账号">
+						</div>
+						<!-- 密码输入框 -->
+						<div class="list">
+							<span>密码：</span>
+							<input id="password" type="password" placeholder="请输入密码">
+						</div>
+						<!-- 登录按钮 -->
+						<div class="btn">
+							<button onclick="loginCheck()">登录</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<script>
+			// 登录验证 可删除
+			function loginCheck () {
+				// 获取id为user的value值
+				var user = document.getElementById('user').value
+				// 获取id为password的value值
+				var password = document.getElementById('password').value
+				
+				// 判断账号是否输入
+				if(!user) {
+					alert("账号不能为空")
+					// 没输入就打断
+					return false
+				}
+				// 判断密码是否输入
+				if(!password) {
+					alert("密码不能为空")
+					// 没输入就打断
+					return false
+				}
+				
+				// 固定账号密码验证可删除 --- 开始
+				
+				// 判断账号是否输入正确 admin 可以换成你想要输入的账号作为验证
+				if(user === 'admin') {
+					alert("账号不能为空")
+					// 不正确就打断
+					return false
+				}
+				// 判断密码是否输入正确 123456 可以换成你想要输入的密码作为验证
+				if(password === '123456') {
+					alert("密码不能为空")
+					// 不正确就打断
+					return false
+				}
+				
+				// 固定账号密码验证可删除 --- 结束
+				
+				
+				// 满足所有条件后执行
+				alert('登录成功')
+			}
+		</script>
+	</body>
 </html>
