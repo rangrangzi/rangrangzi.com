@@ -1,583 +1,90 @@
+<html>
 
-<!DOCTYPE html>
-<html lang="en">
+<head></head>
 
-<head>
-    <meta name="viewport" content="width=1260">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="renderer" content="webkit">
-    <meta name="force-rendering" content="webkit">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    <title>联想游戏-联想网页游戏平台-play.lenovo.com.cn</title>
-    <meta name="keywords" content="网页游戏，页游，网页单机游戏，网页游戏排行榜，网页小游戏，网页游戏推荐">
-    <meta name="description" content="联想游戏网页游戏大全为您提供网页游戏,网页游戏排行榜,网页游戏开服表,最新网页游戏,网页游戏推荐,网页小游戏等尽在联想游戏网页游戏平台。">
+<body><input type="text" id="myInput" onkeyup="myFunction()" placeholder="搜索.." _mstplaceholder="5675046">
 
+    <table id="myTable">
+        <tbody>
+            <tr class="header">
+                <th style="width:60%;" _msthash="574327" _msttexthash="4389879">名字</th>
+                <th style="width:40%;" _msthash="574457" _msttexthash="5288907">网址</th>
+            </tr>
+            <tr>
+                <td _msthash="574106" _msttexthash="6123117">谷歌</td>
+                <td _msthash="574236" _msttexthash="243815">www.google.com</td>
+            </tr>
+            <tr>
+                <td _msthash="574301" _msttexthash="8662602">鲁努布</td>
+                <td _msthash="574431" _msttexthash="247572">www.runoob.com</td>
+            </tr>
+            <tr>
+                <td _msthash="574496" _msttexthash="4998032">淘宝</td>
+                <td _msthash="574626" _msttexthash="242515">www.taobao.com</td>
+            </tr>
+            <tr>
+                <td _msthash="574691" _msttexthash="5280314">百度</td>
+                <td _msthash="574821" _msttexthash="215358">www.baidu.com</td>
+            </tr>
+        </tbody>
+    </table>
+    <style>
+        #myInput {
+          background-image: url('https://static.runoob.com/images/mix/searchicon.png'); /* 添加搜索按钮 */
+          background-position: 10px 12px; /* 定位搜索按钮 */
+          background-repeat: no-repeat; /* 图片不重复 */
+          width: 100%; /* 全屏幕显示 */
+          font-size: 16px; /* 字体大小 */
+          padding: 12px 20px 12px 40px; /* 设置内边距 */
+          border: 1px solid #ddd; /* 添加灰色边框 */
+          margin-bottom: 12px; /* 添加顶部的外边距 */
+        }
+         
+        #myTable {
+          border-collapse: collapse; /* 折叠边框 */
+          width: 100%; /* 全屏幕显示 */
+          border: 1px solid #ddd; /* 设置灰色边框 */
+          font-size: 18px; /* 字体大小 */
+        }
+         
+        #myTable th, #myTable td {
+          text-align: left; /* 文本靠左对齐 */
+          padding: 12px; /* 设置内边距 */
+        }
+         
+        #myTable tr {
+          /* 每一行设置底部边框*/
+          border-bottom: 1px solid #ddd;
+        }
+         
+        #myTable tr.header, #myTable tr:hover {
+          /* 表格头部设置背景 */
+          background-color: #f1f1f1;
+        }
+    </style>
 
-    <!-- build:css -->
-    <link rel="stylesheet" href="/css/global.css">
-    <link rel="stylesheet" href="/css/index.css">
-    <!-- endbuild -->
-
-    <link href="https://gamedown.vgs.lenovo.com.cn/public/images/icon/logo.ico" type="image/x-icon" rel="icon">
-    <link href="https://gamedown.vgs.lenovo.com.cn/public/images/icon/logo.ico" type="image/x-icon" rel="shortcut icon">
-</head>
-
-<body>
-    <h6></h6>
-
-    <!--加载动画-->
-    <!-- <div class=" loadingPart">
-        <div class="loading">
-            <div class="anm-t"></div>
-            <div class="anm-b"></div>
-        </div>
-    </div> -->
-    <!--加载动画-->
-
-    <!-- 页眉 -->
-    <div class="header">
-        <div class="auto1400">
-            <!-- logo部分 -->
-            <div class="logo">
-                <a href="/index.html"><img src="https://gamedown.vgs.lenovo.com.cn/public/images/logo/game_logo.png" alt="lenovo_logo"></a>
-            </div>
-            <!-- 导航菜单 -->
-            <div class="menu">
-                <ul>
-                    <!-- <li class="Cur">
-                        <a href="/index.html">首页</a>
-                    </li>
-                    <li>
-                        <a href="/gameCenter/index.html">全部游戏</a>
-                    </li>
-                    <li>
-                        <a href="/cloudGame/index.html">云手游</a>
-                    </li>
-                    <li>
-                        <a href="/giftCenter/index.html">福利中心</a>
-                    </li>
-                    <li>
-                        <a href="/smallGame/index.html">小游戏</a>
-                    </li>
-                    <li>
-                        <a href="http://q.url.cn/cdqnjP?_type=wpa&qidian=true&_pid=jvz2fl.zh2sq2.k01v278k"
-                            target="_blank">客服中心</a>
-                    </li> -->
-                </ul>
-            </div>
-            <!-- 搜索部分 -->
-            <div class="search">
-                <input type="text" maxlength="20" class="indexSearch" msg="搜索你想玩的游戏">
-                <a class="btnSearch"><span class="iconfont">&#xe615;</span></a>
-            </div>
-            <!-- 登录部分 -->
-            <div class="login">
-                <!-- 用户信息加载 -->
-                <!-- <div class="loading loadingLogin">
-                    <img src="/static/img/loadinggif.gif" alt="加载中,请稍后...">
-                </div> -->
-                <!-- 登录前 -->
-                <div class="loginBefore">
-                    <a>登录</a>
-                    <span>|</span>
-                    <a>注册</a>
-                </div>
-                <!-- 登录后 -->
-                <div class="loginAfter">
-                    <div class="userhead iconfont">&#xe7e5;</div>
-                    <div class="username">
-                        <p>用户名</p><span class="iconfont">&#xe656;</span>
-                    </div>
-                    <div class="userHover">
-                        <a>个人主页</a>
-                        <a class="loginOut">退出登录</a>
-                    </div>
-                </div>
-            </div>
-            <!-- 客户端下载按钮 -->
-            <div class="downloadPart"><a id="download"></a></div>
-        </div>
-    </div>
-
-    <!-- 登录弹窗部分 -->
-    <div class="dialogPart">
-        <div class="dialogCover"></div>
-        <div class="dialogCoverClicker"></div>
-        <!-- 登录弹窗 -->
-        <div class="content loginIframe">
-            <div class="iconfont dialogClose">&#xe641;</div>
-            <iframe></iframe>
-        </div>
-        <!-- 注册弹窗 -->
-        <div class="content registerIframe">
-            <div class="iconfont dialogClose">&#xe641;</div>
-            <iframe></iframe>
-        </div>
-        <!-- 纯文本弹窗 -->
-        <div class="content showMsg">
-            <div class="iconfont dialogClose">&#xe641;</div>
-            <div class="showContent"></div>
-            <div class="ok">确定</div>
-        </div>
-    </div>
-
-    <!-- 首页大轮播 -->
-    <div class="lunboBg">
-        <div class="indexLBPart indexTop80" id="indexLB">
-            <ul>
-                <li>
-                    <!-- <a href="###">
-                    <img src="img/banner-1c7e9736b9.jpg" alt="">
-                </a> -->
-                </li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- 内容部分 -->
-    <div class="MainContent">
-        <!-- 登录框部分 -->
-        <div class="accountPart">
-            <!-- 用户信息加载 -->
-            <div class="loading loadingLogin">
-                <img src="/static/img/loadinggif.gif" alt="加载中,请稍后...">
-            </div>
-            <!-- 账户信息 -->
-            <div class="account">
-                <!-- 第一部分 -->
-                <div class="part1">
-                    <div class="userheadPart iconfont">&#xe7e5;</div>
-                    <p class="username indexUName">用户名</p>
-                    <a class="loginOut">「退出」</a>
-                    <a class="accCenter btnOther">个人中心</a>
-                </div>
-                <!-- 第二部分 -->
-                <div class="part2">
-                    <div class="growCount"></div>
-                    <div class="indexG"></div>
-                    <div class="jdt"></div>
-                </div>
-                <!-- 第三部分 -->
-                <div class="part3">
-                    <div class="linepart"><span>我玩过的游戏</span></div>
-                    <ul class="indexPlayedGame">
-                        <!-- <li><img src="/img/banner1-1f24107aaa.png" alt="">
-                            <h3>传奇世界</h3><span>传奇1287服</span><a href="###">进入游戏</a>
-                        </li> -->
-                        <div class="loading">
-                            <img src="/static/img/loadinggif.gif" alt="加载中,请稍后...">
-                        </div>
-                    </ul>
-                </div>
-            </div>
-            <!-- 未登录状态 -->
-            <div class="loginOutPart">
-                <div class="logo"><img src="https://gamedown.vgs.lenovo.com.cn/public/images/logo/game_logo.png" alt="lenovo_logo"></div>
-                <img src="/img/loginline-4bf47acff6.png" alt="_______________" class="indexline">
-                <div class="btn btnLogin">立即登录</div>
-                <div class="btn btnReg">立即注册</div>
-            </div>
-        </div>
-
-        <!-- 除首页外居中部分布局外框 -->
-        <div class="auto1200">
-            <!-- 首页小轮播 -->
-            <div class="smallLBPart syxlbPart">
-                <div class="smallLBList" id="firstSmallLB">
-                    <ul>
-                        <!-- 后台数据循环部分start -->
-                        <!-- 后台数据循环部分end -->
-                    </ul>
-                </div>
-                <div class="btnLeftsmallLB"></div>
-                <div class="btnRightsmallLB"></div>
-            </div>
-
-            <!-- 开服公告和热门游戏 -->
-            <div class="tabAndList">
-                <!-- 开服公告 -->
-                <div class="tabLeft">
-                    <div class="indexTitle">
-                        <span class="iconfont">&#xe67f;</span>
-                        <h1>开服公告</h1>
-                    </div>
-                    <!-- 选项卡菜单 -->
-                    <div class="tabList">
-                        <ul>
-                            <li class="Cur">最新<span>|</span></li>
-                            <li class="last">预告</li>
-                        </ul>
-                    </div>
-                    <!-- 内容部分 -->
-                    <div class="content">
-                        <!-- 已开 -->
-                        <div class="listInfo Cur" id="oldServer">
-                            <ul>
-                                <!-- 后台数据循环部分start -->
-                                <!-- 后台数据循环部分end -->
-                            </ul>
-                        </div>
-                        <!-- 预告 -->
-                        <div class="listInfo" id="newServer">
-                            <ul>
-                                <!-- 后台数据循环部分start -->
-                                <!-- 后台数据循环部分end -->
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!--热门游戏-->
-                <div class="listRight">
-                    <div class="indexTitle">
-                        <span class="iconfont">&#xe633;</span>
-                        <h1>热门游戏</h1>
-                    </div>
-                    <div class="btnHyh" id="hotGameHyh">换一换</div>
-                    <!-- 游戏列表 -->
-                    <div class="listInfo hostList">
-                        <ul>
-                            <!-- 后台数据循环部分start -->
-                            <!-- <li>
-                                <div class="imgPart">
-                                    <a href="###">
-                                        <img src="https://gamedown.vgs.lenovo.com.cn/cms/2018-08-14/201808141425260506091.png"
-                                            alt="">
-                                    </a>
-                                </div>
-                                <div class="content">
-                                    <h2>《梦幻西游》</h2>
-                                    <p>2018年全民PK赛报名开启！百万现金巨奖 顶级模板</p>
-                                    <div class="lastPart">
-                                        <span class="lx"></span>
-                                        <div class="linkG">
-                                            <a href="###">官网</a><span>|</span><a href="###" class="hotGamesGift">礼包</a>
-                                        </div>
-                                        <a class="linkGame">进入游戏<span class="iconfont">&#xe604;</span></a>
-                                    </div>
-                                </div>
-                            </li> -->
-                            <!-- 后台数据循环部分end -->
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 新闻公告 -->
-            <div class="newsPart" style="display: none;">
-                <div class="indexTitle">
-                    <span class="iconfont">&#xe696;</span>
-                    <h1>新闻公告</h1>
-                </div>
-                <!-- 更多 -->
-                <div class="more">
-                    <a href="/newsCenter/index.html">
-                        <span></span>更多
-                    </a>
-                </div>
-                <!-- 内容部分 -->
-                <div class="content" id="xwggPart">
-                    <!-- <div class="importantNew">
-                            <div class="tuijian">
-                                <div class="icon"></div>
-                                <p>高考一考定终身的时代要结束了</p>
-                            </div>
-                            <img src="/img/jifenBg-16ea6c08bc.png" alt="">
-                            <p class="tjContent"><a href="###">近日，一则高考改革方案引起了舆论哗然，因为其中提到“探索开展综合评价录取模式改革试点，高考成绩占比不低于60%”
-                                    近日，一则高考改革方案引起了舆论哗然，因为其中提到“探索开展综合评价录取模式改革试点，高考成绩占比不低于60%”</a></p>
-                        </div>
-                        <div class="newsList">
-                            <ul>
-                                <li>
-                                    <a>
-                                        <span></span>
-                                        <h3>《传奇世界》7月11日9:00全服更新维护公告</h3>
-                                        <h4>08-30</h4>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <a href="###" class="ggw"><img src="/img/lunbo1-18e2fcb3c6.png" alt=""></a> -->
-                </div>
-            </div>
-
-            <!-- 推荐新游 -->
-            <div class="smallLBPart haveTitle tjxyPart">
-                <div class="indexTitle">
-                    <span class="iconfont">&#xe633;</span>
-                    <h1>推荐新游</h1>
-                </div>
-                <div class="smallLBList" id="tuiJianSmallLB">
-                    <ul>
-                    </ul>
-                </div>
-                <div class="btnLeftsmallLB"></div>
-                <div class="btnRightsmallLB"></div>
-            </div>
-            <!-- 精品排行和经典游戏 -->
-            <div class="tabAndList">
-                <!-- 精品排行 -->
-                <div class="tabLeft">
-                    <div class="indexTitle">
-                        <span class="iconfont">&#xe67f;</span>
-                        <h1>精品排行</h1>
-                    </div>
-                    <!-- 选项卡菜单 -->
-                    <div class="tabList">
-                        <ul>
-                            <li class="Cur">热门<span>|</span></li>
-                            <li class="last">最新</li>
-                        </ul>
-                    </div>
-                    <!-- 内容部分 -->
-                    <div class="content">
-                        <!-- 热门 -->
-                        <div class="listInfo Cur" id="hotTabGame">
-                            <ul>
-                                <!-- 后台数据循环部分start -->
-                                <!-- 后台数据循环部分end -->
-                            </ul>
-                        </div>
-                        <!-- 最新 -->
-                        <div class="listInfo" id="newTabGame">
-                            <ul>
-                                <!-- 后台数据循环部分start -->
-                                <!-- 后台数据循环部分end -->
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!--经典游戏-->
-                <div class="listRight">
-                    <div class="indexTitle">
-                        <span class="iconfont">&#xe633;</span>
-                        <h1>经典游戏</h1>
-                    </div>
-                    <!-- 更多 -->
-                    <div class="more">
-                        <a href="/gameCenter/index.html">
-                            <span></span>更多
-                        </a>
-                    </div>
-                    <!-- 游戏列表 -->
-                    <div class="listInfo jdyxList">
-                        <ul>
-                            <!-- 后台数据循环部分start -->
-                            <!-- <li>
-                                <div class="imgPart">
-                                    <a href="###">
-                                        <img src="https://gamedown.vgs.lenovo.com.cn/cms/2018-08-14/201808141425260506091.png"
-                                            alt="">
-                                    </a>
-                                </div>
-                                <div class="content">
-                                    <h2>《梦幻西游》</h2>
-                                    <p>2018年全民PK赛报名开启！百万现金巨奖 顶级模板</p>
-                                    <div class="lastPart">
-                                        <span class="lx"></span>
-                                        <div class="linkG">
-                                            <a href="###">官网</a><span>|</span><a href="###" class="hotGamesGift">礼包</a>
-                                        </div>
-                                        <a class="linkGame">进入游戏<span class="iconfont">&#xe604;</span></a>
-                                    </div>
-                                </div>
-                            </li> -->
-                            <!-- 后台数据循环部分end -->
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 游戏排行 -->
-            <div class="gameSortPart" style="display: none;">
-                <!-- 明星游戏 -->
-                <div class="gameSort">
-                    <div class="indexTitle">
-                        <span class="iconfont">&#xe633;</span>
-                        <h1>明星游戏</h1>
-                    </div>
-                    <!-- 更多 -->
-                    <div class="more">
-                        <a href="/gameCenter/index.html">
-                            <span></span>更多
-                        </a>
-                    </div>
-                    <div class="content" id="mingxingyouxi">
-                        <ul>
-                        </ul>
-                    </div>
-                </div>
-                <!-- 玩家推荐 -->
-                <div class="gameSort">
-                    <div class="indexTitle">
-                        <span class="iconfont">&#xe633;</span>
-                        <h1>玩家推荐</h1>
-                    </div>
-                    <!-- 更多 -->
-                    <div class="more">
-                        <a href="/gameCenter/index.html">
-                            <span></span>更多
-                        </a>
-                    </div>
-                    <div class="content" id="wanjiatuijian">
-                        <ul></ul>
-                    </div>
-                </div>
-                <!-- 最热新游 -->
-                <div class="gameSort">
-                    <div class="indexTitle">
-                        <span class="iconfont">&#xe633;</span>
-                        <h1>最热新游</h1>
-                    </div>
-                    <!-- 更多 -->
-                    <div class="more">
-                        <a href="/gameCenter/index.html">
-                            <span></span>更多
-                        </a>
-                    </div>
-                    <div class="content" id="zuirexinyou">
-                        <ul></ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 全部游戏 -->
-            <div class="allGames" style="display: none;">
-                <div class="indexTitle">
-                    <span class="iconfont">&#xe63a;</span>
-                    <h1>全部游戏</h1>
-                </div>
-                <!-- 更多 -->
-                <div class="more">
-                    <a href="/gameCenter/index.html">
-                        <span></span>更多
-                    </a>
-                </div>
-                <!-- 全部游戏选项卡 -->
-                <div class="tabGames">
-                    <ul>
-                        <li class="Cur">角色扮演类<span>/</span></li>
-                        <li>战争策略类<span>/</span></li>
-                        <li>休闲竞技类<span>/</span></li>
-                        <li>模拟经营类<span>/</span></li>
-                        <li>棋牌类<span>/</span></li>
-                        <li>其他</li>
-                    </ul>
-                </div>
-                <!-- 全部游戏列表 -->
-                <div class="allGamesList">
-                    <!-- 角色扮演 -->
-                    <div class="gameGroup Cur">
-                        <ul>
-                            <div class="loading">
-                                <img src="/static/img/loadinggif.gif" alt="加载中,请稍后...">
-                            </div>
-                            <!-- 后台数据循环部分start -->
-                            <!-- <li>
-                                <div class="imgPart">
-                                    <img src="/img/jifenBg-16ea6c08bc.png" alt="">
-                                    <div class="cover">
-                                        <a href="###">开始游戏</a>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <h3>梦幻西游</h3>
-                                    <div class="linkGroup">
-                                        <a href="###">官网</a>
-                                        <a href="###" class="allGamesGift">礼包</a>
-                                        <span>|</span>
-                                    </div>
-                                </div>
-                            </li> -->
-                            <!-- 后台数据循环部分end -->
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 联想会员外链 -->
-    <!-- <div class="adIframe">
-        <iframe src="/adIframe/index.html" frameborder="no" scrolling="no"></iframe>
-    </div> -->
-
-    <!-- 托盘部分 -->
-    <div class="trayPart">
-        <ul>
-            <li class="chkkpAD">
-                <div class="iconfont">&#xe620;</div>
-            </li>
-        </ul>
-    </div>
-    <!-- 托盘更新详情 -->
-    <div class="trayMain">
-        <div class="trayMainCover"></div>
-        <div class="trayMainCoverClicker"></div>
-        <div class="trayContent">
-            <div class="item chkkpAD Cur">
-                <div class="iconfont close" key="chkkpAD">&#xe641;</div>
-                <div class="content"></div>
-                <label class="chk7ishow chk7dkpad" for="chk7dkpad">
-                    <span class="iconfont">&#xe63e;</span><input type="checkbox" id="chk7dkpad">
-                    <div class="note">近期不再显示</div>
-                </label>
-            </div>
-        </div>
-    </div>
-
-    <!-- 辅助性质a标签 -->
-    <a class="loginedAutoOpenTab"></a>
-
-    <!-- 20020403 -->
-    <div></div>
-
-    <script src="https://gamedown.vgs.lenovo.com.cn/public/js/jweb-745f0bbdcy-min.js"></script>
-    <script src="https://gamedown.vgs.lenovo.com.cn/public/js/jec-745f0bbdcy-min.js"></script>
-    <script src="https://gamedown.vgs.lenovo.com.cn/public/js/jsencrypt.min.js"></script>
-    <script src="https://gamedown.vgs.lenovo.com.cn/public/js/jquery.lazyload.js"></script>
-    <script src="https://gamedown.vgs.lenovo.com.cn/public/js/AES-745f0bbdcy-min.js"></script>
-    <script src="https://gamedown.vgs.lenovo.com.cn/public/js/avatar-v1.2.2.js"></script>
-    <script src="https://gamedown.vgs.lenovo.com.cn/public/js/qrcode-745f0bbdcy-min.js"></script>
-
-    <!-- build:js -->
-    <script src="/js/common-83ddb653dd.js"></script>
-    <!-- endbuild -->
     <script>
-
-        pageInit({
-            /* 页面就绪 */
-            ready: function (e) {
-                domCode.buildHeader("headerIndex");
-                netCode.index.ready();
-            },
-
-            /* 登录成功 */
-            loginsuccess: function (data) {
-                /* console.log(data, "-----已拿到用户信息，当前是首页-----------------"); */
-                netCode.index.loginsuccess(data);
-            },
-
-            /* 未登录 */
-            loginfail: function () {
-                netCode.index.loginfail();
-                //console.log("未登录");
-            },
-
-            /* 页面离开事件 */
-            leave: function (e) {
-                //report.leave({ pageNum: "1" });
+        function myFunction() {
+          // 声明变量
+          var input, filter, table, tr, td, i, txtValue;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+         
+          // 循环遍历所有列表项，并隐藏那些与搜索查询不匹配的项
+          for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+              txtValue = td.textContent || td.innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+              } else {
+                tr[i].style.display = "none";
+              }
             }
-        });
-    </script>
-    <script>
-        var _hmt = _hmt || [];
-        (function () {
-            var hm = document.createElement("script");
-            hm.src = "https://hm.baidu.com/hm.js?6eecefaaf8127bc4788336645435e2cc";
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(hm, s);
-        })();
+          }
+        }
     </script>
 </body>
 
