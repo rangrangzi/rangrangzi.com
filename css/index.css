@@ -1,3 +1,5 @@
+
+
 body {
 	width: 100%;
 	height: 100%;
@@ -6,4 +8,34 @@ body {
   
 }
 
+div {
+    /* background-color: lightgrey; */
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+	border: 10px solid palevioletred;
+	background: url(../img/CaoMei.jpg) ;
+	
+}
 
+
+h1{
+	text-align:left;
+	color:blueviolet;
+	width: 300px;	
+    padding: 10px;
+    margin: 10px;
+	border: 1px solid blueviolet;
+	background: url(../img/CaoMei.jpg) ;
+	
+}
+.footer{
+	text-align:left;
+	color:blueviolet;
+	width: 300px;
+	
+    padding: 10px;
+    margin: 10px;
+	border: 1px solid blueviolet;
+	background: url(../img/CaoMei.jpg) ;
+}
