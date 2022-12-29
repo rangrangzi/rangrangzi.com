@@ -10,10 +10,10 @@ body {
 
 div {
     /* background-color: lightgrey; */
-    width: 120px;
+    width: 100px;
     padding: 10px;
     margin: 10px;
-	border: 10px solid palevioletred;
+	border: 1px solid blueviolet;
 	background: url(../img/CaoMei.jpg) ;
 	
 }
