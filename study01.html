@@ -1,21 +1,91 @@
-<!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>登录</title>
-<link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/modle.css">
 </head>
-<body>
-    <div><p>steam++</p>
-	<p>加速steam服务，discord语音聊天，twitch直播，origin，uplay，公共CDN，国外验证码平台，github，nexus mods，网盘服务，其他网站</p>
-    <a >steam++ 百度网盘链接 提取码：0422 </a>
-	<script>
-		function login1(){			
-			location.href = 'https://pan.baidu.com/s/1AJi1_JjUIrfVhIWWwMcJug '
-		}
-	</script>
-  <button type="button" onclick="login1()">点击下载</button></div>
-  <p><a href="index.html">返回首页</a></p>
- 
+
+<body><input type="text" id="myInput" onkeyup="myFunction()" placeholder="搜索.." _mstplaceholder="5675046">
+
+    <table id="myTable">
+        <tbody>
+            <tr class="header">
+                <th style="width:60%;" _msthash="574327" _msttexthash="4389879">名字</th>
+                <th style="width:40%;" _msthash="574457" _msttexthash="5288907">网址</th>
+            </tr>
+            <tr>
+                <td _msthash="574106" _msttexthash="6123117">Nexus Mods</td>
+                <td _msthash="574236" _msttexthash="243815"><a href="https://www.nexusmods.com/">https://www.nexusmods.com/</a></td>
+            </tr>
+            <tr>
+                <td _msthash="574301" _msttexthash="8662602">3DM GAME</td>
+                <td _msthash="574431" _msttexthash="247572"><a href="https://mod.3dmgame.com/">https://mod.3dmgame.com/</a></td>
+            </tr>
+            <tr>
+                <td _msthash="574496" _msttexthash="4998032">猫须网</td>
+                <td _msthash="574626" _msttexthash="242515"><a href="http://www.maoxu.com/">http://www.maoxu.com/</a></td>
+            </tr>
+            <tr>
+            
+        </tbody>
+    </table>
+    <style>
+        #myInput {
+          background-image: url('https://static.runoob.com/images/mix/searchicon.png'); /* 添加搜索按钮 */
+          background-position: 10px 12px; /* 定位搜索按钮 */
+          background-repeat: no-repeat; /* 图片不重复 */
+          width: 100%; /* 全屏幕显示 */
+          font-size: 16px; /* 字体大小 */
+          padding: 12px 20px 12px 40px; /* 设置内边距 */
+          border: 1px solid #ddd; /* 添加灰色边框 */
+          margin-bottom: 12px; /* 添加顶部的外边距 */
+        }
+         
+        #myTable {
+          border-collapse: collapse; /* 折叠边框 */
+          width: 100%; /* 全屏幕显示 */
+          border: 1px solid #ddd; /* 设置灰色边框 */
+          font-size: 18px; /* 字体大小 */
+        }
+         
+        #myTable th, #myTable td {
+          text-align: left; /* 文本靠左对齐 */
+          padding: 12px; /* 设置内边距 */
+        }
+         
+        #myTable tr {
+          /* 每一行设置底部边框*/
+          border-bottom: 1px solid #ddd;
+        }
+         
+        #myTable tr.header, #myTable tr:hover {
+          /* 表格头部设置背景 */
+          background-color: #f1f1f1;
+        }
+    </style>
+
+    <script>
+        function myFunction() {
+          // 声明变量
+          var input, filter, table, tr, td, i, txtValue;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+         
+          // 循环遍历所有列表项，并隐藏那些与搜索查询不匹配的项
+          for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+              txtValue = td.textContent || td.innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+              } else {
+                tr[i].style.display = "none";
+              }
+            }
+          }
+        }
+    </script>
 </body>
+
 </html>
