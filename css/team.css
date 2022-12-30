@@ -101,3 +101,8 @@ body{
 	/* 图片自动裁剪 防止变形 */
 	object-fit: cover;
 }
+@media only screen and (max-width: 640px) {
+	/*这里书写手机端的css代码，手机端的css代码是在pc端的代码基础上书写，类似于补充*/
+  
+  }
+  
