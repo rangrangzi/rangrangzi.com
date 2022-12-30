@@ -61,7 +61,7 @@ body{
 	/* 设置长度 */
 	width: 100%;
 	/* 设置高度 */
-	height: 100%;
+	height: auto;
 	/* 图片自动裁剪 防止变形 */
 	object-fit: cover;
 }
@@ -80,7 +80,7 @@ body{
 	/* 设置长度 */
 	width: 100%;
 	/* 设置高度 */
-	height: 100%;
+	height: auto;
 	/* 图片自动裁剪 防止变形 */
 	object-fit: cover;
 }
@@ -97,7 +97,7 @@ body{
 	/* 设置长度 */
 	width: 100%;
 	/* 设置高度 */
-	height: 100%;
+	height: auto;
 	/* 图片自动裁剪 防止变形 */
 	object-fit: cover;
 }
