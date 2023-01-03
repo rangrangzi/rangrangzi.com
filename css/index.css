@@ -101,5 +101,8 @@ body {
 	color: #FFF;
 	background: powderblue;
 	padding: 100px 0;
-    width: 16.75rem;
+    width: 116.75rem;
+}
+.footer p{
+    text-align: center;
 }
