@@ -10,10 +10,16 @@
 	float: left;
 	justify-content: space-between;
 	/* width: 80%; */
-    width: 60%;
+    width: 80%;
 	height: 50px;
 	padding: 10px 10%;
 	background: rgb(255, 255, 255, 0.3);
+}
+body {
+	width: 5.225rem;
+	height: 7.9rem;
+	font-size: 15px "Microsoft YaHei", Arial, Helvetica, sans-serif;
+	background-color: pink;
 }
 
 .logo h1{
@@ -74,6 +80,6 @@
 .footer{
 	text-align: center;
 	color: #FFF;
-	background: pink;
+	background: powderblue;
 	padding: 10px 0;
 }
