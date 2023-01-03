@@ -19,9 +19,8 @@ body {
 	width: 5.225rem;
 	height: 7.9rem;
 	font-size: 15px "Microsoft YaHei", Arial, Helvetica, sans-serif;
-	background-color: pink;
+	background:url(../img/020422.jpg)
 }
-
 .logo h1{
 	color: #DE2B41;
 	letter-spacing: 15px;
@@ -102,6 +101,7 @@ body {
 	background: powderblue;
 	padding: 100px 0;
     width: 116.75rem;
+    height: 100vh;
 }
 .footer p{
     text-align: center;
