@@ -1,0 +1,289 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.header{
+	width: 100%;
+	background: #20232c;
+}
+.top{
+	width: 1000px;
+	height: 70px;
+	line-height: 70px;
+	margin: auto;
+}
+.top-left {
+	float: left;
+}
+.top-left img{
+	float: left;
+	height: 50px;
+	margin-top: 10px;
+}
+.nav a{
+	font-size: 15px;
+	font-weight: 500;
+	color: #bdbdbd;
+	text-decoration: none;
+	padding: 0 30px;
+}
+.nav .active{
+	color: #FFFFFF;
+}
+.nav a:hover{
+	color: #FFFFFF;
+}
+.search{
+	float: right;
+	margin-top: 20px;
+}
+.search input{
+	float: left;
+	width: 150px;
+	height: 25px;
+	border: 1px solid #CCC;
+	background: #FFFFFF;
+}
+.search button{
+	display: block;
+	float: left;
+	background: #CE3202;
+	border: none;
+	height: 27px;
+	width: 50px;
+	color: #FFFFFF;
+}
+.home{
+	width: 1000px;
+	height: 900px;
+	margin: 20px auto;
+}
+.home-left{
+	float: left;
+	width: 760px;
+}
+.ban{
+	width: 760px;
+	height: 350px;
+}
+.swiper {
+	position: relative;
+	width: 760px;
+	height: 350px;
+	margin: 0 auto 60px auto;
+	overflow: hidden;
+}
+
+.wrap {
+	position: relative;
+	width: 760px;
+	height: 350px;
+	margin: 15px auto;
+	overflow: hidden;
+}
+
+.warp ul {
+	position: absolute;
+}
+
+.wrap ul li {
+	width: 760px;
+	height: 350px;
+}
+
+.wrap ul li img {
+	width: 100%;
+	height: 350px;
+	object-fit: cover;
+}
+
+.wrap ol {
+	position: absolute;
+	right: 5%;
+	bottom: 40px;
+}
+
+.wrap ol li {
+	list-style: none;
+	height: 5px;
+	width: 30px;
+	border: 1px solid #FFF;
+	border-radius: 5px;
+	margin-left: 12px;
+	color: #959490;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+	font-size: 0px;
+}
+
+.wrap ol .on {
+	background: #FFFFFF;
+}
+.home-right{
+	float: right;
+	width: 200px;
+}
+.home-use h4{
+	font-size: 16px;
+	color: #666;
+	letter-spacing: 2px;
+	margin: 10px 0;
+}
+.home-use ul{
+	width: 100%;
+	height: 200px;
+}
+.home-use ul li{
+	list-style: none;
+	float: left;
+	width: 140px;
+	margin-right: 15px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.home-use ul li a{
+	text-decoration: none;
+	color: #333;
+}
+.home-use ul li:nth-child(5n+5){
+	margin-right: 0;
+}
+.home-use ul li img{
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+}
+.home-use ul li p{
+	font-size: 15px;
+	font-weight: 550;
+}
+.home-right h4{
+	font-size: 16px;
+	color: #666;
+	letter-spacing: 2px;
+	margin: 10px 0;
+}
+.home-right ul{
+	border: 1px solid #CCCCCC;
+}
+.home-right ul li{
+	list-style: none;
+	width: 100%;
+	height: 50px;
+	margin-top: 10px;
+	border-bottom: 1px solid #CCCCCC;
+}
+.home-right ul li img{
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin-left: 10px;
+	object-fit: cover;
+}
+.home-right ul li div{
+	float: left;
+	margin-left: 10px;
+}
+.home-right ul li div p{
+	font-size: 15px;
+	color: #FCBD50;
+}
+.home-right ul li div span{
+	font-size: 12px;
+	font-weight: 540;
+}
+.home-zl>img{
+	width: 100%;
+	height: 80px;
+	object-fit: cover;
+	margin-bottom: 10px;
+}
+
+.footer{
+	background: #20232c;
+	text-align: center;
+	padding: 10px 0;
+	color: #F2F2F2;
+}
+.footer a{
+	color: #f2f2f2;
+	font-size: 13px;
+	margin: 0 6px;
+	font-weight: 530;
+	text-decoration: none;
+}
+.footer p{
+	font-size: 13px;
+	margin-top: 10px;
+	color: #959490;
+}
+.jq-list{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	border: 1px solid #CCCCCC;
+}
+.jq-list img{
+	width: 300px;
+	height: 160px;
+	object-fit: cover;
+}
+.jql-text{
+	width: 650px;
+	margin-right: 20px;
+}
+.jql-text h4{
+	margin-bottom: 10px;
+	font-size: 20px;
+	font-weight: normal;
+	color: #000;
+}
+.jql-text p{
+	font-size: 15px;
+	color: #666;
+	line-height: 1.6;
+}
+.yy,.xj{
+	width: 1000px;
+}
+.yy ul li{
+	width: 150px;
+	margin-right: 20px;
+}
+.yy ul li:nth-child(5n+5){
+	margin-right: 20px;
+}
+.yy ul li:nth-child(6n+6){
+	margin-right: 0;
+}
+.yyg{
+	width: 1000px;
+	margin: 20px auto;
+}
+.yyg td img{
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+	object-fit: cover;
+}
+.yyg table{
+	width: 100%;
+	text-align: center;
+}
+.yyg th{
+	padding: 10px 0;
+}
+.yyg td{
+	padding: 10px 0;
+	font-size: 12px;
+}
+.ge{
+	width: 60%;
+	display: flex;
+	align-items: center;
+	padding-left: 30%;
+}
+.yyg tr:nth-child(odd){
+	background: #F2F2F2;
+}
