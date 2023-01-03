@@ -91,10 +91,18 @@
 	/* 图片自动裁剪 防止变形 */
 	object-fit: cover;
 }
+.net1{
+	color: aqua;
+	background: url(../img/net1.jpg);
+	height: 60vh;
+	width: 120vh;
+}
 .net1 img{
-	height: 120vh;
+	height: 20vh;
+	width: 50vh;
 
 }
 .net p{
 	color: #999;
+	text-align: center;
 }
