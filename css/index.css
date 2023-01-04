@@ -10,29 +10,40 @@
 	float: left;
 	justify-content: space-between;
 	/* width: 80%; */
-    width: 80%;
-	height: 350px;
-	padding: 10px 10%;
-	background: rgb(255, 255, 255, 0.3);
+    width: 100%;
+	height: 25.375rem;
+	background: url(../img/net1.jpg);
 }
 body {
 	width: 5.225rem;
-	height: 7.9rem;
+	height: 9.9rem;
 	font-size: 15px "Microsoft YaHei", Arial, Helvetica, sans-serif;
-	background:url(../img/020422.jpg)
+	background:url(../img/bg.png)
 }
 .logo h1{
-	color: #DE2B41;
-	letter-spacing: 15px;
-	font-size: 50px;
-    background: url(../img/020422.jpg);
+	color: green;
+	letter-spacing: 55px;
+	font-size: 100px;
+	width: 100%;
+	height: 100%;
+	margin-top: 0%;
+    background: url(../img/loading.gif);
+	border: 2px solid green;
+    padding: 2px;
+    margin: 2px;
+	text-decoration:underline;
 }
+
 .nav a{
     padding: 1px 0px;
 	text-decoration: none;
 	color: #333;
 	font-size: 38px;
 	margin-left: 5px;
+	border: 2px solid red;
+    padding: 2px;
+    margin: 2px;
+	background-color: #f2f2f2;
    
     
 }
@@ -40,16 +51,16 @@ body {
     background-color: palegoldenrod;
 }
 /* 因为添加了br切行，所以需要3，5，7填写子名 */
-.nav a:nth-child(3){
+.nav a:nth-child(4){
     background-color: royalblue;
 }
-.nav a:nth-child(5){
+.nav a:nth-child(7){
     background-color: palevioletred;
 }
-.nav a:nth-child(7){
+.nav a:nth-child(10){
     background-color: pink;
 }
-.nav a:nth-child(9){
+.nav a:nth-child(13){
     background-color: peru;
 }
 .nav a:last-child{
@@ -57,7 +68,7 @@ body {
 }
 .banner{
 	width: 100%;
-	height: 50vh;
+	height: 60vh;
 }
 .banner img{
 	width: 100%;
@@ -66,8 +77,12 @@ body {
 }
 #like{
 	text-align: center;
-	width: 1200px;
+	width: 115rem;
 	margin: 30px auto;
+	border: 5px solid red;
+    padding: 5px;
+    margin: 5px;
+	background-color: #f2f2f2;
 }
 #like span{
 	background: #f2f2f2;
