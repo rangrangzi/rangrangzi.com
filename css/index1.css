@@ -4,7 +4,12 @@
 }
 .header{
 	width: 100%;
-	background: #20232c;
+	background: pink;
+}
+body {
+	width: 95.225rem;
+	height: 9.9rem;
+	font-size: 15px "Microsoft YaHei", Arial, Helvetica, sans-serif;
 }
 .top{
 	width: 1000px;
@@ -26,17 +31,17 @@
 	margin-left: 50px;
 }
 .nav a{
-	font-size: 15px;
+	font-size: 25px;
 	font-weight: 500;
-	color: #bdbdbd;
+	color: white;
 	text-decoration: none;
 	padding: 0 30px;
 }
 .nav .active{
-	color: #FFFFFF;
+	color: purple;
 }
 .nav a:hover{
-	color: #FFFFFF;
+	color: orange;
 }
 .search{
 	float: right;
@@ -206,10 +211,10 @@
 }
 
 .footer{
-	background: #20232c;
+	background: green;
 	text-align: center;
 	padding: 10px 0;
-	color: #F2F2F2;
+	color: orangered;
 }
 .footer a{
 	color: #f2f2f2;
@@ -281,7 +286,7 @@
 }
 .yyg td{
 	padding: 10px 0;
-	font-size: 12px;
+	font-size: 15px;
 }
 .ge{
 	width: 60%;
