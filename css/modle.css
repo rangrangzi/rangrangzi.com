@@ -3,5 +3,5 @@ body {
 	height: 100%;
 	font-size: 45px "Microsoft YaHei", Arial, Helvetica, sans-serif;
 	background-color: pink;
-  
+	background: url(../img/bg02.jpg);
 }
