@@ -1,60 +1,172 @@
 <!DOCTYPE html>
-<html lang="zh-Hans-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>电台</title>
-    <link rel="stylesheet" href="css/fm.css">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="apple-touch-icon">
-    <link rel="shortcut icon">
-</head>
-<body>
-    <div class="app" :style="{'--current-color':colorDark}">
-        <div class="info-box" v-if="track">
-            <div class="cover" v-if="trackCover" 
-                @click="play()"
-                :data-playing="String(playing)"
-                :style="{boxShadow:boxShadow,backgroundImage:`url(${trackCover})`}"></div>
-            <div class="content">
-                <h1>{{ track.title }}</h1>
-                <p>{{ fixSub(sub) }}</p>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="css/music2.css">
+        <link href="css/music1.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- 顶部logo和搜索 -->
+        <div class="top">
+            <div class="container">
+                <div class="logo">
+                    <h1>
+                        <a href=""></a>
+                    </h1>
+                </div>
+                <div class="search">
+                    <i class="icono-search"></i>
+                    <input type="text" placeholder="输入查询关键字">
+                </div>
             </div>
         </div>
-        <div class="ctrl-box">
-            <button @click="play()">{{playing?'暂停':'播放'}}</button>
-            <button @click="next()">下一首</button>
-            <button @click="fav()" :data-active="favIds.includes(String(trackId))">收藏</button>
-        </div>
-        <div class="time-box">
-            <span class="current-time"></span>
-            <span class="duration-time"></span>
+        
+        <div class="play-main">
+            <div class="container main-wrap">
+                <!-- 左侧功能栏 -->
+                <div class="left-side">
+                    <ul class="side-menu">
+                        <li><a href="" class="active"><i class="icon-font icon-recommend"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;今日推荐</a></li>
+                        <li><a href=""><i class="icon-font icon-rank"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;排行榜</a></li>
+                        <li><a href=""><i class="icon-font icon-playing"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;正在播放</a></li>
+                        <li><a href=""><i class="icon-font icon-history"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;播放历史</a></li>
+                        <li><a href=""><i class="icon-font icon-fav"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我的收藏</a></li>
+                    </ul>
+                </div>
+                <!-- 歌曲列表 -->
+                <div class="list">
+                    <table>
+                        <!-- 列表头 -->
+                        <thead>
+                        <tr class="tb-head">
+                            <th class="tb-space"></th>
+                            <th>歌曲</th>
+                            <th>演唱者</th>
+                            <th>专辑</th>
+                            <th>大小</th>
+                            <th class="tb-space"></th>
+                        </tr>
+                        </thead>
+                        <!-- 列表项 -->
+                        <tbody id="tbody">       </tbody>
+                    </table>
+                </div>
 
-        </div>
-        <div class="progress" :data-loading="loading">
-            <b></b>
-            <i></i>
-        </div>
-        <!-- <div class="bottom-ctrl-box">
-            <button @click="fav()" :data-active="favIds.includes(String(trackId))">收藏</button>
-            <a :href="src" :download="title">下载</a>
-        </div> -->
-        <div class="fav-track-list">
-            <div class="item" v-for="fav in favTracks" :key="fav.id"
-                :data-active="trackId === fav.id" 
-                @click="go(fav.id)">
-                <h3>{{fav.title}}</h3>
-                <span>{{fixSub(fav.sub)}}</span>
+
+
+                <!-- 歌曲信息 -->
+                <div class="right-side">
+                    <!-- 专辑封面 -->
+                    <div class="album-cover">
+                        <a href="">
+                            <img src="img/bg02.jpg" alt="专辑封面">
+                        </a>
+                    </div>
+                    <!-- 歌词 -->
+                    <div class="album-lrc">
+                        <ul>
+                            <li class="lrc-line">带你去旅行 - 校长</li>
+                            <li class="lrc-line">作词：朱贺</li>
+                            <li class="lrc-line">作曲：朱贺</li>
+                            <li class="lrc-line">编曲：王柏鸿</li>
+                            <li class="lrc-line">今天妆令人特别着迷</li>
+                            <li class="lrc-line">Oh 我说 baby</li>
+                            <li class="lrc-line">出门前换上新的心情</li>
+                            <li class="lrc-line">Oh 我的 lady</li>
+                            <li class="lrc-line">你喜欢有小情绪</li>
+                            <li class="lrc-line">像晴天的乌云</li>
+                            <li class="lrc-line">头发长见识短的惊奇</li>
+                            <li class="lrc-line">表情丰富令人着迷</li>
+                            <li class="lrc-line">你的一切我都好奇像秘密</li>
+                            <li class="lrc-line">安全带系好带你去旅行</li>
+                            <li class="lrc-line">穿过风和雨</li>
+                            <li class="lrc-line">我想要带你去浪漫的土耳其</li>
+                            <li class="lrc-line">然后一起去东京和巴黎</li>
+                            <li class="lrc-line">其实我特别喜欢迈阿密</li>
+                            <li class="lrc-line">和有黑人的洛杉矶</li>
+                            <li class="lrc-line">其实亲爱的你不必太过惊奇</li>
+                            <li class="lrc-line">一起去繁华的上海和北京</li>
+                            <li class="lrc-line">还有云南的大理保留着回忆</li>
+                            <li class="lrc-line">这样才有意义</li>
+                            <li class="lrc-line">今天妆令人特别着迷</li>
+                            <li class="lrc-line">Oh 我说 baby</li>
+                            <li class="lrc-line">出门前换上新的心情</li>
+                            <li class="lrc-line">Oh 我的 lady</li>
+                            <li class="lrc-line">你喜欢有小情绪</li>
+                            <li class="lrc-line">像晴天的乌云</li>
+                            <li class="lrc-line">头发长见识短的惊奇</li>
+                            <li class="lrc-line">表情丰富令人着迷</li>
+                            <li class="lrc-line">你的一切我都好奇像秘密</li>
+                            <li class="lrc-line">安全带系好带你去旅行</li>
+                            <li class="lrc-line">穿过风和雨</li>
+                            <li class="lrc-line">我想要带你去浪漫的土耳其</li>
+                            <li class="lrc-line">然后一起去东京和巴黎</li>
+                            <li class="lrc-line">其实我特别喜欢迈阿密</li>
+                            <li class="lrc-line">和有黑人的洛杉矶</li>
+                            <li class="lrc-line">其实亲爱的你不必太过惊奇</li>
+                            <li class="lrc-line">一起去繁华的上海和北京</li>
+                            <li class="lrc-line">还有云南的大理保留着回忆</li>
+                            <li class="lrc-line">这样才有意义</li>
+                            <li class="lrc-line">我想要带你去浪漫的土耳其</li>
+                            <li class="lrc-line">然后一起去东京和巴黎</li>
+                            <li class="lrc-line">其实我特别喜欢迈阿密</li>
+                            <li class="lrc-line">和有黑人的洛杉矶</li>
+                            <li class="lrc-line">其实亲爱的你不必太过惊奇</li>
+                            <li class="lrc-line">一起去繁华的上海和北京</li>
+                            <li class="lrc-line">还有云南的大理保留着回忆</li>
+                            <li class="lrc-line">这样才有意义</li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-        <footer>
-            <a href="https://lab.magiconch.com/" target="_blank">神奇海螺试验场</a>
-            <a href="https://github.com/itorr/fm" target="_blank">GitHub</a>
-        </footer>
-    </div>
-    <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
-    <script src="js/function.js"></script>
-    <script src="js/fm-lite.js"></script>
-</body>
+        <!-- 底部歌曲播放控制，音量，进度等 -->
+        <div class="play-bottom">
+
+            <!-- 播放控制 -->
+            <div class="play-control">
+                <a href="javascript:;" class="btn-pre" id="btn-pre"></a>
+                <a href="javascript:;" class="btn-play" id="btnPlay"></a>
+                <a href="javascript:;" class="btn-next" id="btn-next"></a>
+            </div>
+
+            <!-- 进度条 -->
+            <div class="progress-info">
+                <div class="play-info">
+                    <a href="javascript:;" id="playingName">  </a>
+                </div>
+
+                <div class="play-length">
+                    <div class="play-current">00:00</div>
+                    <div class="play-progress" id="jdt">
+                        <div class="play-panel"></div>
+                        <div class="progress-control">
+                            <a href="javascript:;" class="dot"></a>
+                        </div>
+                    </div>
+                    <div class="play-duration">00:00</div>
+                </div>
+            </div>
+
+            <!-- 声音控制 -->
+            <div class="play-volume">
+                <div class="volume-icon">
+                </div>
+                <div class="volume-wrap">
+                    <div class="volume-panel"></div>
+                    <div class="volume-control">
+                        <a href="javascript:;" class="dot"></a>
+                    </div>
+                </div>    
+            </div>
+            <div class="play-state" id="play-state"><img src="img/bg02.jpg" alt=""></div>
+        </div>
+<!--        引入数据文件-->
+        <script src="js/music1.js"></script>
+<!--        引入核心文件-->
+        <script src="js/music2.js"></script>
+    </body>
 </html>
