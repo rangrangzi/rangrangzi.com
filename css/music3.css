@@ -1,0 +1,88 @@
+.list{
+    float:left;
+    flex: 6;
+    padding:10px;
+    min-width: 380px;
+}
+.list table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.tb-head{
+    color:rgba(0,0,0,0.3);
+}
+.tb-space{
+    width:0px;
+}
+.tb-head th{
+    border-color: rgba(0,0,0,0.1) !important;
+}
+.list{
+    overflow: auto;
+}
+::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    width: 5px;
+    background-color: rgba(0,0,0,0.1);
+    border-radius:5px;
+}
+.list table tr th,.list table tr td{
+    position: relative;
+    padding: 10px 0;
+    margin:0;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    font-family: "微软雅黑";
+    font-size: 10pt;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+}
+/*底部歌曲控制部分*/
+.play-control{
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 290px;
+    text-align: center;
+}
+.play-control a{
+    position: relative;
+    display: inline-block;
+    top:24px;
+    width:32px;
+    height: 32px;
+    margin-left:32px;
+    background-color: transparent;
+}
+.btn-play{
+    background: url('../img/1.png') no-repeat;
+    cursor: pointer;
+}
+.btn-play:hover{
+    background: url('../img/2.png') no-repeat;
+}
+.btn-pause{
+    background: url('../images/caomei1.jpg') no-repeat;
+    cursor: pointer;
+}
+.btn-pause:hover{
+    background: url('../images/pic05.jpg') no-repeat;
+}
+.btn-pre{
+    background: url('../images/pic06.jpg') no-repeat;
+    cursor: pointer;
+}
+.btn-pre:hover{
+    background: url('../images/dog.jpg') no-repeat;
+}
+.btn-next{
+    background: url('../img/bg02.jpg') no-repeat;
+    cursor: pointer;
+}
+.btn-next:hover{
+    background: url('../images/pgone.jpg') no-repeat;
+}

@@ -3,8 +3,8 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 60px;
-    background-color: #22425a;
+    height: 21.25rem;
+    background-color: whitesmoke;
 }
 .play-bottom{
     position: absolute;
@@ -16,16 +16,16 @@
 }
 .play-main{
     position: absolute;
-    top:60px;
+    top:5.75rem;
     left: 0;
     right: 0;
-    bottom: 80px;
-    background-color: #fff;
+    bottom: 1rem;
+    background-color: whitesmoke;
 }
 .container{
     position: relative;
     height: 100%;
-    width: 90.5rem;
+   
 }
 .logo{
     float:left;
@@ -34,9 +34,10 @@
     padding-left:16px;
 }
 .logo h1{
-    width: 164px;
+    width: 194px;
     height: 100%;
-    background: url('../images/pic03.jpg') no-repeat 0 50%;
+    background:url(../img/网易云.png)
+	
 }
 .logo h1 a{
     display: block;
@@ -96,7 +97,7 @@
     color:rgba(0,0,0,0.3);
 }
 .tb-space{
-    width:100px;
+    width:0px;
 }
 .tb-head th{
     border-color: rgba(0,0,0,0.1) !important;
