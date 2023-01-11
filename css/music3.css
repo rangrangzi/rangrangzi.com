@@ -1,52 +1,26 @@
-.list{
-    float:left;
-    flex: 6;
-    padding:10px;
-    min-width: 380px;
+.play-top{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 5rem;
+    width: 100rem;
+    background-color: #22425a;
 }
-.list table{
-    width: 100%;
-    border-collapse: collapse;
-}
-.tb-head{
-    color:rgba(0,0,0,0.3);
-}
-.tb-space{
-    width:0px;
-}
-.tb-head th{
-    border-color: rgba(0,0,0,0.1) !important;
-}
-.list{
-    overflow: auto;
-}
-::-webkit-scrollbar{
-    width: 5px;
-    height: 5px;
-    background-color: transparent;
-}
-::-webkit-scrollbar-thumb{
-    width: 5px;
-    background-color: rgba(0,0,0,0.1);
-    border-radius:5px;
-}
-.list table tr th,.list table tr td{
-    position: relative;
-    padding: 10px 0;
-    margin:0;
-    border-bottom: 1px solid rgba(0,0,0,0.05);
-    font-family: "微软雅黑";
-    font-size: 10pt;
-    text-align: left;
-    white-space: nowrap;
-    overflow: hidden;
+.play-main{
+    position: absolute;
+    top:5.75rem;
+    left: 0;
+    right: 0;
+    bottom: 1rem;
+    background-color: whitesmoke;
 }
 /*底部歌曲控制部分*/
 .play-control{
     position: absolute;
     left: 0;
     height: 100%;
-    width: 290px;
+    width: 14rem;
     text-align: center;
 }
 .play-control a{
@@ -85,4 +59,154 @@
 }
 .btn-next:hover{
     background: url('../images/pgone.jpg') no-repeat;
+}
+/*播放方式*/
+.play-state{
+    position: absolute;
+    right: 30px;
+    top:15px;
+    bottom: 20px;
+    height: 40px;
+    width: 40px;
+}
+
+/* 声音控制 */
+.play-volume{
+    position: absolute;
+    right: 0;
+    top:0;
+    bottom: 0;
+    height: 100%;
+    width: 290px;
+    text-align: center;
+}
+.volume-icon{
+    position: absolute;
+    left:50px;
+    top: 30px;
+    width: 20px;
+    height: 20px;
+    background: url('../img/1.png') no-repeat;
+    cursor: pointer;
+}
+.volume-icon:hover{
+    background: url('../img/2.png') no-repeat;
+}
+
+.volume-wrap{
+    position: absolute;
+    top: 38px;
+    left:75px;
+    width:100px;
+    height: 3px;
+    cursor:pointer;
+}
+.volume-panel{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom:0;
+    background: rgba(255,255,255,0.2);
+}
+.volume-control{
+    position: absolute;
+    top: 0;
+    left:0;
+    width:30px;
+    height: 3px;
+    background: #fff;
+}
+.dot{
+    position: absolute;
+    display: inline-block;
+    right: 0;
+    top: -3px;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background: #fff;
+}
+
+/* 进度控制 */
+.progress-info{
+    position: absolute;
+    left:290px;
+    right: 290px;
+    top: 0.5rem;
+    bottom: 0;
+    min-width:330px;
+}
+
+.play-info{
+    position: absolute;
+    top:20px;
+    width: 100%;
+    height: 18px;
+    line-height: 18px;
+}
+.play-info a{
+    color:#fff;
+}
+.play-info a:hover{
+    text-decoration: underline;
+}
+.play-length{
+    position: absolute;
+    top: 43px;
+    width: 100%;
+    height: 20px;
+    font-size:10px;
+    color:rgba(255,255,255,0.4);
+
+}
+.play-current{
+    position: absolute;
+    left:0;
+    width: 40px;
+}
+.play-duration{
+    position: absolute;
+    right: 0;
+    width: 40px;
+    text-align: right;
+}
+.play-progress{
+    position: absolute;
+    top:5px;
+    left: 40px;
+    right: 40px;
+    height: 3px;
+    cursor:pointer;
+}
+.play-panel{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom:0;
+    width: 100%;
+    background: rgba(255,255,255,0.2);
+}
+.progress-control{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left:0;
+    width:0%;
+    height: 3px;
+    background: aqua;
+}
+.list table tr th,.list table tr td{
+    position: relative;
+    top: 6.25rem;
+    padding: 10px 0;
+    margin:0;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    font-family: "微软雅黑";
+    font-size: 20pt;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
 }
