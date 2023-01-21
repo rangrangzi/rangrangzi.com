@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <style>
         body{
-            background: url(./img/newyear.jpg);
+            background: url(./img/newyear1.jpg);
             background-size:cover;
         }
         .game{
@@ -15,12 +15,16 @@
             text-align: center;
             margin-top: 0 auto; 
         }
+		/* 字体颜色 */
+		div{
+			color: whitesmoke;
+		}
         .turntable{
             width: 310px;
             height: 320px;
             margin-top: 0 auto;
         }
-        .gift{
+        /* .gift{
             width: 100px;
             height: 100px;
             border: 1px solid yellowgreen;
@@ -31,10 +35,60 @@
             line-height: 100px;
             background-color: azure;
             color: cadetblue;
+        } */
+		.gift{
+            width: 100px;
+            height: 100px;
+            border: 1px solid yellowgreen;
+            float: left;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 100px;
+            background-color: azure;
+            
         }
-        .gift:nth-child(5){
+		/* 背景图片 */
+		.gift:nth-child(1){
+            background: url(./img/曜.jpg);
+			
+        }
+		.gift:nth-child(2){
+            background: url(./img/红包.jpg);
+			
+        }
+		.gift:nth-child(3){
+            background: url(./img/马可波罗.jpg);
+			
+        }
+		.gift:nth-child(4){
+            background: url(./img/李信.jpg);
+			
+        }
+		.gift:nth-child(5){
+            
+			background: url(./img/抽奖.jpg);
+        }
+		
+		.gift:nth-child(6){
+            background: url(./img/瑶.jpg);
+			
+        }
+		.gift:nth-child(7){
+            background: url(./img/小乔.jpg);
+			
+        }
+		.gift:nth-child(8){
+            background: url(./img/孙悟空.jpg);
+			
+        }
+		.gift:nth-child(9){
+            background: url(./img/牛魔.jpg);
+			
+        }
+        /* .gift:nth-child(5){
             background-color: transparent;
-        }
+        } */
         .start{
             width: 80%;
             display: inline-block;
@@ -42,6 +96,9 @@
             margin-bottom: 10px;
             vertical-align: middle;
             color: rgb(255, 255, 255);
+			/* 文字大小和加粗 */
+			font-weight: 800;
+			font-size: 16px;
             background-color: rgb(233, 104, 107);
             text-align: center;
             cursor: pointer;
@@ -81,6 +138,7 @@
 			<div class="gift">小乔山海琳琅生</div>
 			<div class="gift">孙悟空齐天大圣</div>
 			<div class="gift">牛魔牛运亨通</div>
+			
 			<button type="button" class="start" onclick="start()">我要获取新年礼物</button>
 		</div>
 	</div>
