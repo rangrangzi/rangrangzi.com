@@ -59,6 +59,44 @@
     "            [01:26.36]I made it always\n" +
     "            [01:29.47]I made it always\n" +
     "            [01:29.56]Verse2:\n" +
+    "            [01:30.56]搞个beat 找人feat 好神秘\n" +
+    "            [01:32.89]作秀像在下象棋 为了利益假装peace\n" +
+    "            [01:35.71]小兄弟 保个秘 我有特殊超能力\n" +
+    "            [01:38.55]像是一拳超人孤独到我没有假想敌\n" +
+    "            [01:41.45]学会倾听保持清醒经历让我变成熟\n" +
+    "            [01:44.23]沉淀心灵仔细品品像是82年红酒\n" +
+    "            [01:47.02]他们说我的歌太拉还是要点进来懂哥你心里面阴暗的多精彩\n" +
+    "            [01:50.18]我从来都没说要证明我清白keyboard man代入 像受到了侵害\n" +
+    "            [01:54.06]你们对我真了解\n" +
+    "            [01:55.57]网上copy的bull shit\n" +
+    "            [01:57.01]显的你们好纯洁\n" +
+    "            [01:58.29]真可惜每一张专辑赞美on my ears\n" +
+    "            [02:01.13]惹的同行们都羡慕 天赋能力兼顾\n" +
+    "            [02:02.84]和上天的眷顾 cheers wooo\n" +
+    "            [02:04.42]Hook:\n" +
+    "            [02:05.42]I made different hot shit\n" +
+    "            [02:06.86]it hits different now\n" +
+    "            [02:08.24]I made cold taste\n" +
+    "            [02:09.12]me and vibes cold out\n" +
+    "            [02:10.92]Too many noise anywhere\n" +
+    "            [02:11.80]Thats so loud\n" +
+    "            [02:13.83]When I came let it burn out\n" +
+    "            [02:17.47]I made the different hot shit\n" +
+    "            [02:20.14]Snack menu I feel sick\n" +
+    "            [02:23.00]I made it always\n" +
+    "            [02:25.95]I made it always\n" +
+    "            [02:26.89]我15年的歌放到现在它依旧滚烫\n" +
+    "            [02:29.15]jealousy充斥你的情绪所以口吐芬芳\n" +
+    "            [02:31.87]PG的作品不行但是人品一定很棒\n" +
+    "            [02:34.77]谢谢你们的赞赏让我获取更多声望\n" +
+    "            [02:37.83]Pull up me\n" +
+    "            [02:39.21]I need  lots of new fishes\n" +
+    "            [02:40.81]Sell ur dream\n" +
+    "            [02:42.05]It doesn't affect  me\n" +
+    "            [02:43.78]Catch me red handed\n" +
+    "            [02:44.86]真相通常血腥\n" +
+    "            [02:46.20]嫌弃又想靠近的\n" +
+    "            [02:47.78]往往非常致命\n" +
     "            [03:56]end"
     ,"[00:00]快餐 - 王唯楚/Pily\n" +
         "[00:09.94]Verse1:\n" +
