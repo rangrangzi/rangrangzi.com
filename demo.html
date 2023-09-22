@@ -1,0 +1,125 @@
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<title>音乐播放器</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no">
+
+<link rel="stylesheet" href="layui/css/layui.css">
+
+<link type="text/css" rel="stylesheet" href="css/pg1.css">
+
+</head>
+<body>
+<div class="wrap youbian" id="main_box" >
+    <div class="box">
+        <div class="flex_box">
+            <div class="album_cover">
+                <div class="cover_container" >
+                </div>
+            </div>
+            <div class="flex_item">
+                <div class="lyric" id="lyric">
+                    <div class="cont" id="lyric_txt">
+                        <div class="txt" id="lyricDiv" style="-webkit-transition-property: -webkit-transform; -webkit-transition-duration: 0.3s; -webkit-transition-timing-function: ease-out; -webkit-transition-delay: initial; -webkit-transform: translate3d(0px, -24px, 0px); ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="love" id="likeDiv">
+            <a href="javascript:;" class="icon_loved" id="icon_love" style="display:none;"><i>喜欢</i></a>
+        </div>
+    </div>
+    <!--播放进度条-->
+    <div class="play_bar">
+        <div class="progress" id="progress">
+            <div class="bar"></div>
+            <div class="has_load" id="play_loading" style="-webkit-transform:translateX(0%);"></div>
+            <div class="has_play" id="play_on" style="-webkit-transform: translateX(0%); "><span style="" id="btn_pro"><i></i></span></div>
+        </div>
+        <p class="play_time"><time id="currentTime">00:00</time><time id="totalTime">00:00</time></p>
+    </div>
+    <div class="kognzhianniu">
+        <div class="name" >
+            <div style="position: relative;height: inherit;">
+                <span class="song"><img src=""></span>
+                <h2 class="singer" id="ss"><marquee id = "goSinger" behavior=alternate direction=left scrollamount="2"></marquee></h2>
+            </div>
+
+        </div>
+        <a href="javascript:;" class="btn_play" id="cover"><span></span><i></i></a>
+        <a href="javascript:;" class="btn_play play_left" id="play_left" title="上一首"><span></span><i></i></a>
+        <a href="javascript:;" class="btn_play play_right" id="play_right" title="下一首"><span></span><i></i></a>
+        <div class="vlue" >
+            <div style="position: relative">
+                <div class="vlue-icon"><i class="v_o"></i></div>
+                <div class="range-volume"><input type="range" id="volume" min="0" max="1" step="0.01" value="0.5"></div>
+            </div>
+        </div>
+        <div class="klok">
+            <div style="position: relative">
+                <div class="layui-inline">
+                    <label class="kllabel">歌词</label>
+                    <div class="switch">
+                        <input id="cmn-toggle-1" class="cmn-toggle cmn-toggle-round" type="checkbox" checked>
+                        <label for="cmn-toggle-1"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="gradient_mask"></div>
+    <div class="layui-carousel" id="bg">
+        <div carousel-item></div>
+    </div>
+    <div class="bg_mask" style="opacity:0;"></div>
+    <div id="tipsbox" class="tips success"></div>
+</div>
+<audio id="my_audio" data-num = "0"></audio>
+</div>
+
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="layui/layui.js"></script>
+<script type="text/javascript" src="js/song.js"></script>
+<script type="text/javascript" src="js/player.js"></script>
+<script>
+    document.onkeydown=function(event){
+        var e = event || window.event || arguments.callee.caller.arguments[0];
+        if(e && e.keyCode==32){ //空格键
+            $("#cover").click();
+        }
+        if(e && e.keyCode==39){ // right键
+            $("#play_right").click();
+        }
+        if(e && e.keyCode==37){ // left键
+            $("#play_left").click();
+        }
+        if(e && e.keyCode==38){ // up键
+            var volume =  parseFloat($("#volume").val());
+            volume+=0.1;
+            if(volume >= 1){
+                volume = 1;
+            }
+            $("#volume").val(volume);
+            songmsg.songMuted(false);
+            songmsg.setVolume(volume);
+        }
+        if(e && e.keyCode==40){ // down键
+            var volume =  parseFloat($("#volume").val());
+            volume-=0.1;
+            if(volume <= 0){
+                volume = 0;
+                songmsg.songMuted(true);
+            }
+            $("#volume").val(volume);
+            songmsg.setVolume(volume);
+        }
+    };
+</script>
+
+</body>
+</html>
